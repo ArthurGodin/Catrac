@@ -1,0 +1,18 @@
+C:\Users\godinho\Downloads\C#Completo\C#Completo\Backup\obj\x86\Debug\Lab EasyInner.csproj.AssemblyReference.cache
+C:\Users\godinho\Downloads\C#Completo\C#Completo\Backup\obj\x86\Debug\EasyInnerSDK.UI.FrmBIO.FrmBIO.resources
+C:\Users\godinho\Downloads\C#Completo\C#Completo\Backup\obj\x86\Debug\EasyInnerSDK.UI.FrmBIO.frmBio6xx.resources
+C:\Users\godinho\Downloads\C#Completo\C#Completo\Backup\obj\x86\Debug\EasyInnerSDK.frmMain.resources
+C:\Users\godinho\Downloads\C#Completo\C#Completo\Backup\obj\x86\Debug\EasyInnerSDK.Properties.Resources.resources
+C:\Users\godinho\Downloads\C#Completo\C#Completo\Backup\obj\x86\Debug\EasyInnerSDK.UI.FrmOffLine.resources
+C:\Users\godinho\Downloads\C#Completo\C#Completo\Backup\obj\x86\Debug\EasyInnerSDK.UI.FrmOnline.resources
+C:\Users\godinho\Downloads\C#Completo\C#Completo\Backup\obj\x86\Debug\EasyInnerSDK.UI.FrmSobre.FrmSobre.resources
+C:\Users\godinho\Downloads\C#Completo\C#Completo\Backup\obj\x86\Debug\Lab EasyInner.csproj.GenerateResource.cache
+C:\Users\godinho\Downloads\C#Completo\C#Completo\Backup\obj\x86\Debug\Lab EasyInner.csproj.CoreCompileInputs.cache
+C:\Users\godinho\Downloads\C#Completo\C#Completo\Backup\bin\x86\Debug\EasyInnerSDK.exe
+C:\Users\godinho\Downloads\C#Completo\C#Completo\Backup\bin\x86\Debug\EasyInnerSDK.pdb
+C:\Users\godinho\Downloads\C#Completo\C#Completo\Backup\bin\x86\Debug\Interop.NBioBSPCOMLib.dll
+C:\Users\godinho\Downloads\C#Completo\C#Completo\Backup\bin\x86\Debug\LMLeitorUSB.dll
+C:\Users\godinho\Downloads\C#Completo\C#Completo\Backup\bin\x86\Debug\NITGEN.SDK.NBioBSP.dll
+C:\Users\godinho\Downloads\C#Completo\C#Completo\Backup\obj\x86\Debug\Lab Easy.5E902767.Up2Date
+C:\Users\godinho\Downloads\C#Completo\C#Completo\Backup\obj\x86\Debug\EasyInnerSDK.exe
+C:\Users\godinho\Downloads\C#Completo\C#Completo\Backup\obj\x86\Debug\EasyInnerSDK.pdb
