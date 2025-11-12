@@ -16,6 +16,9 @@ using System.Windows.Forms;
 using System.Collections.Generic;
 using System.Security.Cryptography;
 using System.Linq;
+using System.Net;     // Para a API
+using System.IO;      // Para o Log Local
+using System.Diagnostics; // Para o Debug
 
 //Referências Nitgen
 using NBioBSPCOMLib;
@@ -34,6 +37,8 @@ namespace EasyInnerSDK.UI
     {
         #region Propriedades
         //Catraca
+
+        public List<Bilhete> ListaParaJSON = new List<Bilhete>();
 
         private byte VersaoAlta = 0;
 
@@ -1094,6 +1099,8 @@ namespace EasyInnerSDK.UI
             StringBuilder CartaoPronto = new StringBuilder();
             CartaoPronto.Append(NumCartao);
             InnerAtual.BilheteOnline.Cartao = CartaoPronto;
+
+            ListaParaJSON.Add(InnerAtual.BilheteOnline); // Salva o bilhete bruto na nossa lista
             //Adiciona bilhete coletado na Lista
             UpdateDisplay.AtualizarBilheteOnline(InnerAtual.BilheteOnline);
         }

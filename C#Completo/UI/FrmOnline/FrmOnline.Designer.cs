@@ -82,6 +82,7 @@ namespace EasyInnerSDK.UI
             this.lblEmExec1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.lblDados = new System.Windows.Forms.ToolStripStatusLabel();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
+            this.btnExportarTxt = new System.Windows.Forms.Button();
             this.tcInnerBIO.SuspendLayout();
             this.tbpExOnline.SuspendLayout();
             this.gbOnline.SuspendLayout();
@@ -105,19 +106,21 @@ namespace EasyInnerSDK.UI
             // tcInnerBIO
             // 
             this.tcInnerBIO.Controls.Add(this.tbpExOnline);
-            this.tcInnerBIO.Location = new System.Drawing.Point(2, 0);
+            this.tcInnerBIO.Location = new System.Drawing.Point(3, 0);
+            this.tcInnerBIO.Margin = new System.Windows.Forms.Padding(4);
             this.tcInnerBIO.Name = "tcInnerBIO";
             this.tcInnerBIO.SelectedIndex = 0;
-            this.tcInnerBIO.Size = new System.Drawing.Size(652, 665);
+            this.tcInnerBIO.Size = new System.Drawing.Size(869, 818);
             this.tcInnerBIO.TabIndex = 23;
             // 
             // tbpExOnline
             // 
             this.tbpExOnline.Controls.Add(this.gbOnline);
-            this.tbpExOnline.Location = new System.Drawing.Point(4, 22);
+            this.tbpExOnline.Location = new System.Drawing.Point(4, 25);
+            this.tbpExOnline.Margin = new System.Windows.Forms.Padding(4);
             this.tbpExOnline.Name = "tbpExOnline";
-            this.tbpExOnline.Padding = new System.Windows.Forms.Padding(3);
-            this.tbpExOnline.Size = new System.Drawing.Size(644, 639);
+            this.tbpExOnline.Padding = new System.Windows.Forms.Padding(4);
+            this.tbpExOnline.Size = new System.Drawing.Size(861, 789);
             this.tbpExOnline.TabIndex = 4;
             this.tbpExOnline.Text = "Exemplo Online";
             this.tbpExOnline.UseVisualStyleBackColor = true;
@@ -125,15 +128,18 @@ namespace EasyInnerSDK.UI
             // gbOnline
             // 
             this.gbOnline.Controls.Add(this.gbCadastro);
-            this.gbOnline.Location = new System.Drawing.Point(6, 6);
+            this.gbOnline.Location = new System.Drawing.Point(8, 7);
+            this.gbOnline.Margin = new System.Windows.Forms.Padding(4);
             this.gbOnline.Name = "gbOnline";
-            this.gbOnline.Size = new System.Drawing.Size(629, 628);
+            this.gbOnline.Padding = new System.Windows.Forms.Padding(4);
+            this.gbOnline.Size = new System.Drawing.Size(839, 773);
             this.gbOnline.TabIndex = 2;
             this.gbOnline.TabStop = false;
             this.gbOnline.Text = "Modo Online";
             // 
             // gbCadastro
             // 
+            this.gbCadastro.Controls.Add(this.btnExportarTxt);
             this.gbCadastro.Controls.Add(this.groupBox2);
             this.gbCadastro.Controls.Add(this.groupBox3);
             this.gbCadastro.Controls.Add(this.btnIniciarMaquina);
@@ -146,18 +152,22 @@ namespace EasyInnerSDK.UI
             this.gbCadastro.Controls.Add(this.cmdEntrada);
             this.gbCadastro.Controls.Add(this.cmdSair);
             this.gbCadastro.Controls.Add(this.gbInners);
-            this.gbCadastro.Location = new System.Drawing.Point(6, 12);
+            this.gbCadastro.Location = new System.Drawing.Point(8, 15);
+            this.gbCadastro.Margin = new System.Windows.Forms.Padding(4);
             this.gbCadastro.Name = "gbCadastro";
-            this.gbCadastro.Size = new System.Drawing.Size(614, 611);
+            this.gbCadastro.Padding = new System.Windows.Forms.Padding(4);
+            this.gbCadastro.Size = new System.Drawing.Size(819, 752);
             this.gbCadastro.TabIndex = 3;
             this.gbCadastro.TabStop = false;
             // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.lstBilhetes);
-            this.groupBox2.Location = new System.Drawing.Point(6, 477);
+            this.groupBox2.Location = new System.Drawing.Point(8, 587);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(603, 96);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBox2.Size = new System.Drawing.Size(804, 118);
             this.groupBox2.TabIndex = 34;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Bilhetes coletados";
@@ -165,17 +175,21 @@ namespace EasyInnerSDK.UI
             // lstBilhetes
             // 
             this.lstBilhetes.FormattingEnabled = true;
-            this.lstBilhetes.Location = new System.Drawing.Point(6, 19);
+            this.lstBilhetes.ItemHeight = 16;
+            this.lstBilhetes.Location = new System.Drawing.Point(8, 23);
+            this.lstBilhetes.Margin = new System.Windows.Forms.Padding(4);
             this.lstBilhetes.Name = "lstBilhetes";
-            this.lstBilhetes.Size = new System.Drawing.Size(588, 69);
+            this.lstBilhetes.Size = new System.Drawing.Size(783, 84);
             this.lstBilhetes.TabIndex = 0;
             // 
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.lstVersaoInners);
-            this.groupBox3.Location = new System.Drawing.Point(6, 342);
+            this.groupBox3.Location = new System.Drawing.Point(8, 421);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(603, 80);
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBox3.Size = new System.Drawing.Size(804, 98);
             this.groupBox3.TabIndex = 33;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Versão Inner:";
@@ -184,17 +198,20 @@ namespace EasyInnerSDK.UI
             // 
             this.lstVersaoInners.FormattingEnabled = true;
             this.lstVersaoInners.HorizontalScrollbar = true;
-            this.lstVersaoInners.Location = new System.Drawing.Point(9, 17);
+            this.lstVersaoInners.ItemHeight = 16;
+            this.lstVersaoInners.Location = new System.Drawing.Point(12, 21);
+            this.lstVersaoInners.Margin = new System.Windows.Forms.Padding(4);
             this.lstVersaoInners.Name = "lstVersaoInners";
-            this.lstVersaoInners.Size = new System.Drawing.Size(585, 56);
+            this.lstVersaoInners.Size = new System.Drawing.Size(779, 68);
             this.lstVersaoInners.TabIndex = 31;
             // 
             // btnIniciarMaquina
             // 
             this.btnIniciarMaquina.Enabled = false;
-            this.btnIniciarMaquina.Location = new System.Drawing.Point(547, 579);
+            this.btnIniciarMaquina.Location = new System.Drawing.Point(729, 713);
+            this.btnIniciarMaquina.Margin = new System.Windows.Forms.Padding(4);
             this.btnIniciarMaquina.Name = "btnIniciarMaquina";
-            this.btnIniciarMaquina.Size = new System.Drawing.Size(59, 23);
+            this.btnIniciarMaquina.Size = new System.Drawing.Size(79, 28);
             this.btnIniciarMaquina.TabIndex = 6;
             this.btnIniciarMaquina.Text = "Iniciar";
             this.btnIniciarMaquina.UseVisualStyleBackColor = true;
@@ -202,9 +219,10 @@ namespace EasyInnerSDK.UI
             // 
             // btnRemoverInnerLista
             // 
-            this.btnRemoverInnerLista.Location = new System.Drawing.Point(119, 217);
+            this.btnRemoverInnerLista.Location = new System.Drawing.Point(159, 267);
+            this.btnRemoverInnerLista.Margin = new System.Windows.Forms.Padding(4);
             this.btnRemoverInnerLista.Name = "btnRemoverInnerLista";
-            this.btnRemoverInnerLista.Size = new System.Drawing.Size(107, 23);
+            this.btnRemoverInnerLista.Size = new System.Drawing.Size(143, 28);
             this.btnRemoverInnerLista.TabIndex = 4;
             this.btnRemoverInnerLista.Text = "Remover da Lista";
             this.btnRemoverInnerLista.UseVisualStyleBackColor = true;
@@ -212,9 +230,10 @@ namespace EasyInnerSDK.UI
             // 
             // btnAdicionarUsuarioInnerOnline
             // 
-            this.btnAdicionarUsuarioInnerOnline.Location = new System.Drawing.Point(6, 217);
+            this.btnAdicionarUsuarioInnerOnline.Location = new System.Drawing.Point(8, 267);
+            this.btnAdicionarUsuarioInnerOnline.Margin = new System.Windows.Forms.Padding(4);
             this.btnAdicionarUsuarioInnerOnline.Name = "btnAdicionarUsuarioInnerOnline";
-            this.btnAdicionarUsuarioInnerOnline.Size = new System.Drawing.Size(107, 23);
+            this.btnAdicionarUsuarioInnerOnline.Size = new System.Drawing.Size(143, 28);
             this.btnAdicionarUsuarioInnerOnline.TabIndex = 2;
             this.btnAdicionarUsuarioInnerOnline.Text = "Incluir na Lista";
             this.btnAdicionarUsuarioInnerOnline.UseVisualStyleBackColor = true;
@@ -222,9 +241,10 @@ namespace EasyInnerSDK.UI
             // 
             // btnPararMaquina
             // 
-            this.btnPararMaquina.Location = new System.Drawing.Point(482, 579);
+            this.btnPararMaquina.Location = new System.Drawing.Point(643, 713);
+            this.btnPararMaquina.Margin = new System.Windows.Forms.Padding(4);
             this.btnPararMaquina.Name = "btnPararMaquina";
-            this.btnPararMaquina.Size = new System.Drawing.Size(59, 23);
+            this.btnPararMaquina.Size = new System.Drawing.Size(79, 28);
             this.btnPararMaquina.TabIndex = 7;
             this.btnPararMaquina.Text = "Parar";
             this.btnPararMaquina.UseVisualStyleBackColor = true;
@@ -232,9 +252,10 @@ namespace EasyInnerSDK.UI
             // 
             // cmdLimpar
             // 
-            this.cmdLimpar.Location = new System.Drawing.Point(412, 579);
+            this.cmdLimpar.Location = new System.Drawing.Point(549, 713);
+            this.cmdLimpar.Margin = new System.Windows.Forms.Padding(4);
             this.cmdLimpar.Name = "cmdLimpar";
-            this.cmdLimpar.Size = new System.Drawing.Size(66, 23);
+            this.cmdLimpar.Size = new System.Drawing.Size(88, 28);
             this.cmdLimpar.TabIndex = 4;
             this.cmdLimpar.Text = "Limpar";
             this.cmdLimpar.UseVisualStyleBackColor = true;
@@ -243,9 +264,11 @@ namespace EasyInnerSDK.UI
             // gbMonitoracao
             // 
             this.gbMonitoracao.Controls.Add(this.lblStatus);
-            this.gbMonitoracao.Location = new System.Drawing.Point(6, 428);
+            this.gbMonitoracao.Location = new System.Drawing.Point(8, 527);
+            this.gbMonitoracao.Margin = new System.Windows.Forms.Padding(4);
             this.gbMonitoracao.Name = "gbMonitoracao";
-            this.gbMonitoracao.Size = new System.Drawing.Size(603, 43);
+            this.gbMonitoracao.Padding = new System.Windows.Forms.Padding(4);
+            this.gbMonitoracao.Size = new System.Drawing.Size(804, 53);
             this.gbMonitoracao.TabIndex = 5;
             this.gbMonitoracao.TabStop = false;
             this.gbMonitoracao.Text = "Status comunicação";
@@ -253,17 +276,20 @@ namespace EasyInnerSDK.UI
             // lblStatus
             // 
             this.lblStatus.AutoSize = true;
-            this.lblStatus.Location = new System.Drawing.Point(6, 22);
+            this.lblStatus.Location = new System.Drawing.Point(8, 27);
+            this.lblStatus.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblStatus.Name = "lblStatus";
-            this.lblStatus.Size = new System.Drawing.Size(0, 13);
+            this.lblStatus.Size = new System.Drawing.Size(0, 16);
             this.lblStatus.TabIndex = 1;
             // 
             // gbCadastrados
             // 
             this.gbCadastrados.Controls.Add(this.lstInnersCadastrados);
-            this.gbCadastrados.Location = new System.Drawing.Point(6, 246);
+            this.gbCadastrados.Location = new System.Drawing.Point(8, 303);
+            this.gbCadastrados.Margin = new System.Windows.Forms.Padding(4);
             this.gbCadastrados.Name = "gbCadastrados";
-            this.gbCadastrados.Size = new System.Drawing.Size(603, 90);
+            this.gbCadastrados.Padding = new System.Windows.Forms.Padding(4);
+            this.gbCadastrados.Size = new System.Drawing.Size(804, 111);
             this.gbCadastrados.TabIndex = 4;
             this.gbCadastrados.TabStop = false;
             this.gbCadastrados.Text = "Dispositivos Cadastrados em Memória";
@@ -272,18 +298,21 @@ namespace EasyInnerSDK.UI
             // 
             this.lstInnersCadastrados.FormattingEnabled = true;
             this.lstInnersCadastrados.HorizontalScrollbar = true;
-            this.lstInnersCadastrados.Location = new System.Drawing.Point(10, 17);
+            this.lstInnersCadastrados.ItemHeight = 16;
+            this.lstInnersCadastrados.Location = new System.Drawing.Point(13, 21);
+            this.lstInnersCadastrados.Margin = new System.Windows.Forms.Padding(4);
             this.lstInnersCadastrados.Name = "lstInnersCadastrados";
-            this.lstInnersCadastrados.Size = new System.Drawing.Size(584, 69);
+            this.lstInnersCadastrados.Size = new System.Drawing.Size(777, 84);
             this.lstInnersCadastrados.TabIndex = 5;
             this.lstInnersCadastrados.Click += new System.EventHandler(this.lstInnersCadastrados_Click);
             // 
             // cmdEntrada
             // 
             this.cmdEntrada.Enabled = false;
-            this.cmdEntrada.Location = new System.Drawing.Point(6, 579);
+            this.cmdEntrada.Location = new System.Drawing.Point(8, 713);
+            this.cmdEntrada.Margin = new System.Windows.Forms.Padding(4);
             this.cmdEntrada.Name = "cmdEntrada";
-            this.cmdEntrada.Size = new System.Drawing.Size(100, 23);
+            this.cmdEntrada.Size = new System.Drawing.Size(133, 28);
             this.cmdEntrada.TabIndex = 3;
             this.cmdEntrada.Text = "Porta 1 | Entrada";
             this.cmdEntrada.UseVisualStyleBackColor = true;
@@ -292,9 +321,10 @@ namespace EasyInnerSDK.UI
             // cmdSair
             // 
             this.cmdSair.Enabled = false;
-            this.cmdSair.Location = new System.Drawing.Point(113, 579);
+            this.cmdSair.Location = new System.Drawing.Point(151, 713);
+            this.cmdSair.Margin = new System.Windows.Forms.Padding(4);
             this.cmdSair.Name = "cmdSair";
-            this.cmdSair.Size = new System.Drawing.Size(100, 23);
+            this.cmdSair.Size = new System.Drawing.Size(133, 28);
             this.cmdSair.TabIndex = 2;
             this.cmdSair.Text = "Porta 2 | Saída";
             this.cmdSair.UseVisualStyleBackColor = true;
@@ -317,9 +347,11 @@ namespace EasyInnerSDK.UI
             this.gbInners.Controls.Add(this.label8);
             this.gbInners.Controls.Add(this.udNumeroInner);
             this.gbInners.Controls.Add(this.udQtdDigitosCartao);
-            this.gbInners.Location = new System.Drawing.Point(6, 7);
+            this.gbInners.Location = new System.Drawing.Point(8, 9);
+            this.gbInners.Margin = new System.Windows.Forms.Padding(4);
             this.gbInners.Name = "gbInners";
-            this.gbInners.Size = new System.Drawing.Size(603, 204);
+            this.gbInners.Padding = new System.Windows.Forms.Padding(4);
+            this.gbInners.Size = new System.Drawing.Size(804, 251);
             this.gbInners.TabIndex = 19;
             this.gbInners.TabStop = false;
             this.gbInners.Text = "Configurações";
@@ -328,9 +360,11 @@ namespace EasyInnerSDK.UI
             // 
             this.groupBox1.Controls.Add(this.cboTipoLeitor);
             this.groupBox1.Controls.Add(this.ckbDoisLeitores);
-            this.groupBox1.Location = new System.Drawing.Point(422, 19);
+            this.groupBox1.Location = new System.Drawing.Point(563, 23);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(172, 80);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBox1.Size = new System.Drawing.Size(229, 98);
             this.groupBox1.TabIndex = 37;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Tipo Leitor:";
@@ -338,9 +372,10 @@ namespace EasyInnerSDK.UI
             // cboTipoLeitor
             // 
             this.cboTipoLeitor.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboTipoLeitor.Location = new System.Drawing.Point(6, 16);
+            this.cboTipoLeitor.Location = new System.Drawing.Point(8, 20);
+            this.cboTipoLeitor.Margin = new System.Windows.Forms.Padding(4);
             this.cboTipoLeitor.Name = "cboTipoLeitor";
-            this.cboTipoLeitor.Size = new System.Drawing.Size(160, 21);
+            this.cboTipoLeitor.Size = new System.Drawing.Size(212, 24);
             this.cboTipoLeitor.TabIndex = 22;
             this.cboTipoLeitor.SelectedIndexChanged += new System.EventHandler(this.cboPadraoCartao_SelectedIndexChanged);
             // 
@@ -348,9 +383,10 @@ namespace EasyInnerSDK.UI
             // 
             this.ckbDoisLeitores.AutoSize = true;
             this.ckbDoisLeitores.Enabled = false;
-            this.ckbDoisLeitores.Location = new System.Drawing.Point(88, 43);
+            this.ckbDoisLeitores.Location = new System.Drawing.Point(117, 53);
+            this.ckbDoisLeitores.Margin = new System.Windows.Forms.Padding(4);
             this.ckbDoisLeitores.Name = "ckbDoisLeitores";
-            this.ckbDoisLeitores.Size = new System.Drawing.Size(78, 17);
+            this.ckbDoisLeitores.Size = new System.Drawing.Size(94, 20);
             this.ckbDoisLeitores.TabIndex = 26;
             this.ckbDoisLeitores.Text = "2 Leitores?";
             this.ckbDoisLeitores.UseVisualStyleBackColor = true;
@@ -366,9 +402,11 @@ namespace EasyInnerSDK.UI
             this.gbParamtros.Controls.Add(this.chkVerificacao);
             this.gbParamtros.Controls.Add(this.chkIdentificacao);
             this.gbParamtros.Controls.Add(this.chkListaBio);
-            this.gbParamtros.Location = new System.Drawing.Point(6, 105);
+            this.gbParamtros.Location = new System.Drawing.Point(8, 129);
+            this.gbParamtros.Margin = new System.Windows.Forms.Padding(4);
             this.gbParamtros.Name = "gbParamtros";
-            this.gbParamtros.Size = new System.Drawing.Size(325, 95);
+            this.gbParamtros.Padding = new System.Windows.Forms.Padding(4);
+            this.gbParamtros.Size = new System.Drawing.Size(433, 117);
             this.gbParamtros.TabIndex = 36;
             this.gbParamtros.TabStop = false;
             this.gbParamtros.Text = "Parâmetros:";
@@ -377,9 +415,10 @@ namespace EasyInnerSDK.UI
             // 
             this.chkModuloLC.AutoSize = true;
             this.chkModuloLC.Enabled = false;
-            this.chkModuloLC.Location = new System.Drawing.Point(163, 73);
+            this.chkModuloLC.Location = new System.Drawing.Point(217, 90);
+            this.chkModuloLC.Margin = new System.Windows.Forms.Padding(4);
             this.chkModuloLC.Name = "chkModuloLC";
-            this.chkModuloLC.Size = new System.Drawing.Size(94, 17);
+            this.chkModuloLC.Size = new System.Drawing.Size(115, 20);
             this.chkModuloLC.TabIndex = 31;
             this.chkModuloLC.Text = "Módulo bio LC";
             this.chkModuloLC.UseVisualStyleBackColor = true;
@@ -387,17 +426,19 @@ namespace EasyInnerSDK.UI
             // txtCartaoMaster
             // 
             this.txtCartaoMaster.Enabled = false;
-            this.txtCartaoMaster.Location = new System.Drawing.Point(15, 67);
+            this.txtCartaoMaster.Location = new System.Drawing.Point(20, 82);
+            this.txtCartaoMaster.Margin = new System.Windows.Forms.Padding(4);
             this.txtCartaoMaster.Name = "txtCartaoMaster";
-            this.txtCartaoMaster.Size = new System.Drawing.Size(110, 20);
+            this.txtCartaoMaster.Size = new System.Drawing.Size(145, 22);
             this.txtCartaoMaster.TabIndex = 30;
             // 
             // chkCartaoMaster
             // 
             this.chkCartaoMaster.AutoSize = true;
-            this.chkCartaoMaster.Location = new System.Drawing.Point(6, 52);
+            this.chkCartaoMaster.Location = new System.Drawing.Point(8, 64);
+            this.chkCartaoMaster.Margin = new System.Windows.Forms.Padding(4);
             this.chkCartaoMaster.Name = "chkCartaoMaster";
-            this.chkCartaoMaster.Size = new System.Drawing.Size(92, 17);
+            this.chkCartaoMaster.Size = new System.Drawing.Size(113, 20);
             this.chkCartaoMaster.TabIndex = 29;
             this.chkCartaoMaster.Text = "Cartão Master";
             this.chkCartaoMaster.UseVisualStyleBackColor = true;
@@ -406,9 +447,10 @@ namespace EasyInnerSDK.UI
             // chkLista
             // 
             this.chkLista.AutoSize = true;
-            this.chkLista.Location = new System.Drawing.Point(6, 19);
+            this.chkLista.Location = new System.Drawing.Point(8, 23);
+            this.chkLista.Margin = new System.Windows.Forms.Padding(4);
             this.chkLista.Name = "chkLista";
-            this.chkLista.Size = new System.Drawing.Size(85, 17);
+            this.chkLista.Size = new System.Drawing.Size(101, 20);
             this.chkLista.TabIndex = 27;
             this.chkLista.Text = "Lista OffLine";
             this.chkLista.UseVisualStyleBackColor = true;
@@ -416,9 +458,10 @@ namespace EasyInnerSDK.UI
             // ckbBIO
             // 
             this.ckbBIO.AutoSize = true;
-            this.ckbBIO.Location = new System.Drawing.Point(148, 9);
+            this.ckbBIO.Location = new System.Drawing.Point(197, 11);
+            this.ckbBIO.Margin = new System.Windows.Forms.Padding(4);
             this.ckbBIO.Name = "ckbBIO";
-            this.ckbBIO.Size = new System.Drawing.Size(69, 17);
+            this.ckbBIO.Size = new System.Drawing.Size(86, 20);
             this.ckbBIO.TabIndex = 21;
             this.ckbBIO.Text = "Biometria";
             this.ckbBIO.UseVisualStyleBackColor = true;
@@ -429,9 +472,10 @@ namespace EasyInnerSDK.UI
             this.chkHabilitaTeclado.AutoSize = true;
             this.chkHabilitaTeclado.Checked = true;
             this.chkHabilitaTeclado.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.chkHabilitaTeclado.Location = new System.Drawing.Point(6, 35);
+            this.chkHabilitaTeclado.Location = new System.Drawing.Point(8, 43);
+            this.chkHabilitaTeclado.Margin = new System.Windows.Forms.Padding(4);
             this.chkHabilitaTeclado.Name = "chkHabilitaTeclado";
-            this.chkHabilitaTeclado.Size = new System.Drawing.Size(65, 17);
+            this.chkHabilitaTeclado.Size = new System.Drawing.Size(80, 20);
             this.chkHabilitaTeclado.TabIndex = 23;
             this.chkHabilitaTeclado.Text = "Teclado";
             this.chkHabilitaTeclado.UseVisualStyleBackColor = true;
@@ -440,9 +484,10 @@ namespace EasyInnerSDK.UI
             // 
             this.chkVerificacao.AutoSize = true;
             this.chkVerificacao.Enabled = false;
-            this.chkVerificacao.Location = new System.Drawing.Point(163, 41);
+            this.chkVerificacao.Location = new System.Drawing.Point(217, 50);
+            this.chkVerificacao.Margin = new System.Windows.Forms.Padding(4);
             this.chkVerificacao.Name = "chkVerificacao";
-            this.chkVerificacao.Size = new System.Drawing.Size(79, 17);
+            this.chkVerificacao.Size = new System.Drawing.Size(97, 20);
             this.chkVerificacao.TabIndex = 24;
             this.chkVerificacao.Text = "Verificação";
             this.chkVerificacao.UseVisualStyleBackColor = true;
@@ -452,9 +497,10 @@ namespace EasyInnerSDK.UI
             // 
             this.chkIdentificacao.AutoSize = true;
             this.chkIdentificacao.Enabled = false;
-            this.chkIdentificacao.Location = new System.Drawing.Point(163, 57);
+            this.chkIdentificacao.Location = new System.Drawing.Point(217, 70);
+            this.chkIdentificacao.Margin = new System.Windows.Forms.Padding(4);
             this.chkIdentificacao.Name = "chkIdentificacao";
-            this.chkIdentificacao.Size = new System.Drawing.Size(87, 17);
+            this.chkIdentificacao.Size = new System.Drawing.Size(105, 20);
             this.chkIdentificacao.TabIndex = 25;
             this.chkIdentificacao.Text = "Identificação";
             this.chkIdentificacao.UseVisualStyleBackColor = true;
@@ -463,9 +509,10 @@ namespace EasyInnerSDK.UI
             // 
             this.chkListaBio.AutoSize = true;
             this.chkListaBio.Enabled = false;
-            this.chkListaBio.Location = new System.Drawing.Point(163, 25);
+            this.chkListaBio.Location = new System.Drawing.Point(217, 31);
+            this.chkListaBio.Margin = new System.Windows.Forms.Padding(4);
             this.chkListaBio.Name = "chkListaBio";
-            this.chkListaBio.Size = new System.Drawing.Size(125, 17);
+            this.chkListaBio.Size = new System.Drawing.Size(153, 20);
             this.chkListaBio.TabIndex = 28;
             this.chkListaBio.Text = "Lista sem Bio OffLine";
             this.chkListaBio.UseVisualStyleBackColor = true;
@@ -475,9 +522,11 @@ namespace EasyInnerSDK.UI
             // 
             this.gbLadoCatraca.Controls.Add(this.imgCatraca);
             this.gbLadoCatraca.Controls.Add(this.panel1);
-            this.gbLadoCatraca.Location = new System.Drawing.Point(337, 105);
+            this.gbLadoCatraca.Location = new System.Drawing.Point(449, 129);
+            this.gbLadoCatraca.Margin = new System.Windows.Forms.Padding(4);
             this.gbLadoCatraca.Name = "gbLadoCatraca";
-            this.gbLadoCatraca.Size = new System.Drawing.Size(257, 95);
+            this.gbLadoCatraca.Padding = new System.Windows.Forms.Padding(4);
+            this.gbLadoCatraca.Size = new System.Drawing.Size(343, 117);
             this.gbLadoCatraca.TabIndex = 35;
             this.gbLadoCatraca.TabStop = false;
             this.gbLadoCatraca.Text = "Ao entrar, a catraca está instalada à sua:";
@@ -486,9 +535,10 @@ namespace EasyInnerSDK.UI
             // 
             this.imgCatraca.Image = global::EasyInnerSDK.Properties.Resources.nenhum;
             this.imgCatraca.InitialImage = ((System.Drawing.Image)(resources.GetObject("imgCatraca.InitialImage")));
-            this.imgCatraca.Location = new System.Drawing.Point(160, 17);
+            this.imgCatraca.Location = new System.Drawing.Point(213, 21);
+            this.imgCatraca.Margin = new System.Windows.Forms.Padding(4);
             this.imgCatraca.Name = "imgCatraca";
-            this.imgCatraca.Size = new System.Drawing.Size(83, 66);
+            this.imgCatraca.Size = new System.Drawing.Size(111, 81);
             this.imgCatraca.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.imgCatraca.TabIndex = 31;
             this.imgCatraca.TabStop = false;
@@ -497,18 +547,20 @@ namespace EasyInnerSDK.UI
             // 
             this.panel1.Controls.Add(this.optDireita);
             this.panel1.Controls.Add(this.optEsquerda);
-            this.panel1.Location = new System.Drawing.Point(10, 19);
+            this.panel1.Location = new System.Drawing.Point(13, 23);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(144, 28);
+            this.panel1.Size = new System.Drawing.Size(192, 34);
             this.panel1.TabIndex = 32;
             // 
             // optDireita
             // 
             this.optDireita.AutoSize = true;
             this.optDireita.Enabled = false;
-            this.optDireita.Location = new System.Drawing.Point(81, 6);
+            this.optDireita.Location = new System.Drawing.Point(108, 7);
+            this.optDireita.Margin = new System.Windows.Forms.Padding(4);
             this.optDireita.Name = "optDireita";
-            this.optDireita.Size = new System.Drawing.Size(55, 17);
+            this.optDireita.Size = new System.Drawing.Size(67, 20);
             this.optDireita.TabIndex = 21;
             this.optDireita.Text = "Direita";
             this.optDireita.UseVisualStyleBackColor = true;
@@ -518,9 +570,10 @@ namespace EasyInnerSDK.UI
             // 
             this.optEsquerda.AutoSize = true;
             this.optEsquerda.Enabled = false;
-            this.optEsquerda.Location = new System.Drawing.Point(5, 6);
+            this.optEsquerda.Location = new System.Drawing.Point(7, 7);
+            this.optEsquerda.Margin = new System.Windows.Forms.Padding(4);
             this.optEsquerda.Name = "optEsquerda";
-            this.optEsquerda.Size = new System.Drawing.Size(70, 17);
+            this.optEsquerda.Size = new System.Drawing.Size(87, 20);
             this.optEsquerda.TabIndex = 20;
             this.optEsquerda.Text = "Esquerda";
             this.optEsquerda.UseVisualStyleBackColor = true;
@@ -529,58 +582,65 @@ namespace EasyInnerSDK.UI
             // cboEquipamento
             // 
             this.cboEquipamento.FormattingEnabled = true;
-            this.cboEquipamento.Location = new System.Drawing.Point(182, 78);
+            this.cboEquipamento.Location = new System.Drawing.Point(243, 96);
+            this.cboEquipamento.Margin = new System.Windows.Forms.Padding(4);
             this.cboEquipamento.Name = "cboEquipamento";
-            this.cboEquipamento.Size = new System.Drawing.Size(234, 21);
+            this.cboEquipamento.Size = new System.Drawing.Size(311, 24);
             this.cboEquipamento.TabIndex = 34;
             this.cboEquipamento.SelectedIndexChanged += new System.EventHandler(this.cboEquipamento_SelectedIndexChanged);
             // 
             // lblTipoEquipamento
             // 
             this.lblTipoEquipamento.AutoSize = true;
-            this.lblTipoEquipamento.Location = new System.Drawing.Point(183, 62);
+            this.lblTipoEquipamento.Location = new System.Drawing.Point(244, 76);
+            this.lblTipoEquipamento.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTipoEquipamento.Name = "lblTipoEquipamento";
-            this.lblTipoEquipamento.Size = new System.Drawing.Size(96, 13);
+            this.lblTipoEquipamento.Size = new System.Drawing.Size(121, 16);
             this.lblTipoEquipamento.TabIndex = 33;
             this.lblTipoEquipamento.Text = "Tipo Equipamento:";
             // 
             // cboPadraoCartao
             // 
             this.cboPadraoCartao.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboPadraoCartao.Location = new System.Drawing.Point(6, 78);
+            this.cboPadraoCartao.Location = new System.Drawing.Point(8, 96);
+            this.cboPadraoCartao.Margin = new System.Windows.Forms.Padding(4);
             this.cboPadraoCartao.Name = "cboPadraoCartao";
-            this.cboPadraoCartao.Size = new System.Drawing.Size(163, 21);
+            this.cboPadraoCartao.Size = new System.Drawing.Size(216, 24);
             this.cboPadraoCartao.TabIndex = 17;
             this.cboPadraoCartao.SelectedIndexChanged += new System.EventHandler(this.cboPadraoCartaoOnline_SelectedIndexChanged);
             // 
             // label9
             // 
-            this.label9.Location = new System.Drawing.Point(7, 63);
+            this.label9.Location = new System.Drawing.Point(9, 78);
+            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(92, 13);
+            this.label9.Size = new System.Drawing.Size(123, 16);
             this.label9.TabIndex = 15;
             this.label9.Text = "Padrão Cartão:";
             // 
             // cboTipoConexaoOnline
             // 
             this.cboTipoConexaoOnline.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboTipoConexaoOnline.Location = new System.Drawing.Point(294, 33);
+            this.cboTipoConexaoOnline.Location = new System.Drawing.Point(392, 41);
+            this.cboTipoConexaoOnline.Margin = new System.Windows.Forms.Padding(4);
             this.cboTipoConexaoOnline.Name = "cboTipoConexaoOnline";
-            this.cboTipoConexaoOnline.Size = new System.Drawing.Size(122, 21);
+            this.cboTipoConexaoOnline.Size = new System.Drawing.Size(161, 24);
             this.cboTipoConexaoOnline.TabIndex = 16;
             this.cboTipoConexaoOnline.SelectedIndexChanged += new System.EventHandler(this.cboTipoConexaoOnline_SelectedIndexChanged);
             // 
             // label11
             // 
-            this.label11.Location = new System.Drawing.Point(291, 19);
+            this.label11.Location = new System.Drawing.Point(388, 23);
+            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(92, 13);
+            this.label11.Size = new System.Drawing.Size(123, 16);
             this.label11.TabIndex = 13;
             this.label11.Text = "Tipo Conexão:";
             // 
             // txtPortaOnline
             // 
-            this.txtPortaOnline.Location = new System.Drawing.Point(123, 34);
+            this.txtPortaOnline.Location = new System.Drawing.Point(164, 42);
+            this.txtPortaOnline.Margin = new System.Windows.Forms.Padding(4);
             this.txtPortaOnline.Maximum = new decimal(new int[] {
             9999,
             0,
@@ -592,7 +652,7 @@ namespace EasyInnerSDK.UI
             0,
             0});
             this.txtPortaOnline.Name = "txtPortaOnline";
-            this.txtPortaOnline.Size = new System.Drawing.Size(53, 20);
+            this.txtPortaOnline.Size = new System.Drawing.Size(71, 22);
             this.txtPortaOnline.TabIndex = 18;
             this.txtPortaOnline.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.txtPortaOnline.Value = new decimal(new int[] {
@@ -603,33 +663,37 @@ namespace EasyInnerSDK.UI
             // 
             // label10
             // 
-            this.label10.Location = new System.Drawing.Point(120, 19);
+            this.label10.Location = new System.Drawing.Point(160, 23);
+            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(43, 13);
+            this.label10.Size = new System.Drawing.Size(57, 16);
             this.label10.TabIndex = 14;
             this.label10.Text = "Porta:";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(7, 18);
+            this.label7.Location = new System.Drawing.Point(9, 22);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(74, 13);
+            this.label7.Size = new System.Drawing.Size(90, 16);
             this.label7.TabIndex = 4;
             this.label7.Text = "Número Inner:";
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(179, 19);
+            this.label8.Location = new System.Drawing.Point(239, 23);
+            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(79, 13);
+            this.label8.Size = new System.Drawing.Size(95, 16);
             this.label8.TabIndex = 4;
             this.label8.Text = "Qtd de Dígitos:";
             // 
             // udNumeroInner
             // 
-            this.udNumeroInner.Location = new System.Drawing.Point(6, 34);
+            this.udNumeroInner.Location = new System.Drawing.Point(8, 42);
+            this.udNumeroInner.Margin = new System.Windows.Forms.Padding(4);
             this.udNumeroInner.Maximum = new decimal(new int[] {
             99,
             0,
@@ -641,7 +705,7 @@ namespace EasyInnerSDK.UI
             0,
             0});
             this.udNumeroInner.Name = "udNumeroInner";
-            this.udNumeroInner.Size = new System.Drawing.Size(106, 20);
+            this.udNumeroInner.Size = new System.Drawing.Size(141, 22);
             this.udNumeroInner.TabIndex = 5;
             this.udNumeroInner.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.udNumeroInner.Value = new decimal(new int[] {
@@ -652,7 +716,8 @@ namespace EasyInnerSDK.UI
             // 
             // udQtdDigitosCartao
             // 
-            this.udQtdDigitosCartao.Location = new System.Drawing.Point(182, 34);
+            this.udQtdDigitosCartao.Location = new System.Drawing.Point(243, 42);
+            this.udQtdDigitosCartao.Margin = new System.Windows.Forms.Padding(4);
             this.udQtdDigitosCartao.Maximum = new decimal(new int[] {
             16,
             0,
@@ -664,7 +729,7 @@ namespace EasyInnerSDK.UI
             0,
             0});
             this.udQtdDigitosCartao.Name = "udQtdDigitosCartao";
-            this.udQtdDigitosCartao.Size = new System.Drawing.Size(106, 20);
+            this.udQtdDigitosCartao.Size = new System.Drawing.Size(141, 22);
             this.udQtdDigitosCartao.TabIndex = 5;
             this.udQtdDigitosCartao.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.udQtdDigitosCartao.Value = new decimal(new int[] {
@@ -676,32 +741,44 @@ namespace EasyInnerSDK.UI
             // lblEmExec1
             // 
             this.lblEmExec1.Name = "lblEmExec1";
-            this.lblEmExec1.Size = new System.Drawing.Size(10, 17);
+            this.lblEmExec1.Size = new System.Drawing.Size(13, 20);
             this.lblEmExec1.Text = " ";
             // 
             // lblDados
             // 
             this.lblDados.Name = "lblDados";
-            this.lblDados.Size = new System.Drawing.Size(0, 17);
+            this.lblDados.Size = new System.Drawing.Size(0, 20);
             // 
             // statusStrip1
             // 
+            this.statusStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.lblEmExec1,
             this.lblDados});
             this.statusStrip1.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
-            this.statusStrip1.Location = new System.Drawing.Point(0, 662);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 816);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(651, 22);
+            this.statusStrip1.Padding = new System.Windows.Forms.Padding(1, 0, 19, 0);
+            this.statusStrip1.Size = new System.Drawing.Size(868, 26);
             this.statusStrip1.SizingGrip = false;
             this.statusStrip1.TabIndex = 34;
             this.statusStrip1.Text = "statusStrip1";
             // 
+            // btnExportarTxt
+            // 
+            this.btnExportarTxt.Location = new System.Drawing.Point(467, 716);
+            this.btnExportarTxt.Name = "btnExportarTxt";
+            this.btnExportarTxt.Size = new System.Drawing.Size(75, 23);
+            this.btnExportarTxt.TabIndex = 35;
+            this.btnExportarTxt.Text = "Exportar JSON";
+            this.btnExportarTxt.UseVisualStyleBackColor = true;
+            this.btnExportarTxt.Click += new System.EventHandler(this.btnExportarTxt_Click);
+            // 
             // FrmOnline
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(651, 684);
+            this.ClientSize = new System.Drawing.Size(868, 842);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.tcInnerBIO);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
@@ -712,8 +789,6 @@ namespace EasyInnerSDK.UI
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "OnLine";
             this.Load += new System.EventHandler(this.FrmOnline_Load);
-            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FrmOnline_FormClosed);
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainBIO_FormClosing);
             this.tcInnerBIO.ResumeLayout(false);
             this.tbpExOnline.ResumeLayout(false);
             this.gbOnline.ResumeLayout(false);
@@ -798,5 +873,6 @@ namespace EasyInnerSDK.UI
         public System.Windows.Forms.TextBox txtCartaoMaster;
         public System.Windows.Forms.CheckBox chkCartaoMaster;
         public System.Windows.Forms.CheckBox chkModuloLC;
+        private System.Windows.Forms.Button btnExportarTxt;
     }
 }

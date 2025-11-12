@@ -5,6 +5,7 @@ using System.Drawing;
 using System.Windows.Forms;
 using System.ComponentModel;
 using System.Collections.Generic;
+using System.IO; // Para escrever arquivos
 
 using EasyInnerSDK.Entity;
 using System.Threading;
@@ -396,6 +397,56 @@ namespace EasyInnerSDK.UI
             if (cboPadraoCartao.SelectedIndex == 0)
             {
                 MessageBox.Show("Este tipo é para uso exclusivo de cartões fabricado pela Topdata !");
+            }
+        }
+
+        private void btnExportarTxt_Click(object sender, EventArgs e)
+        {
+            // 1. Mudar o nome do arquivo para .json
+            string caminhoDesktop = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
+            string caminhoArquivo = Path.Combine(caminhoDesktop, "registros_da_catraca.json");
+
+            // 2. Usar a lista 'ListaParaJSON' que está no Controller
+            //    (Vamos verificar se ela existe no próximo bloco)
+            if (ControlOnline.ListaParaJSON == null || ControlOnline.ListaParaJSON.Count == 0)
+            {
+                MessageBox.Show("Não há nenhum bilhete para exportar.", "Aviso");
+                return;
+            }
+
+            try
+            {
+                // 3. Criar uma lista temporária para guardar as strings JSON
+                List<string> jsonObjects = new List<string>();
+
+                // 4. Loop: Transforma cada bilhete-objeto em uma string JSON
+                foreach (Bilhete bilhete in ControlOnline.ListaParaJSON)
+                {
+                    string dataFormatada = $"{bilhete.Dia:D2}/{bilhete.Mes:D2}/20{bilhete.Ano:D2}";
+                    string horaFormatada = $"{bilhete.Hora:D2}:{bilhete.Minuto:D2}:{bilhete.Segundo:D2}";
+                    string cartaoLimpo = bilhete.Cartao.ToString().Trim();
+
+                    string jsonLinha = $"  {{\n    \"Cartao\": \"{cartaoLimpo}\",\n    \"Data\": \"{dataFormatada}\",\n    \"Hora\": \"{horaFormatada}\",\n    \"Origem\": {bilhete.Origem},\n    \"Tipo\": {bilhete.Tipo}\n  }}";
+
+                    jsonObjects.Add(jsonLinha);
+                }
+
+                // 5. Junta todas as strings JSON com uma vírgula
+                // CORREÇÃO .ToArray() para funcionar no .NET Framework antigo
+                string jsonCorpo = string.Join(",\n", jsonObjects.ToArray());
+
+                // 6. Monta o arquivo final
+                string jsonFinal = "[\n" + jsonCorpo + "\n]";
+
+                // 7. Salva o arquivo final
+                File.WriteAllText(caminhoArquivo, jsonFinal);
+
+                // 8. Avisa!
+                MessageBox.Show("Registros exportados com sucesso para JSON!\nArquivo: " + caminhoArquivo, "Sucesso");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Ocorreu um erro ao exportar o JSON: " + ex.Message, "Erro");
             }
         }
     }
